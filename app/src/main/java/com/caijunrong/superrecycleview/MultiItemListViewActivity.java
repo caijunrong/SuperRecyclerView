@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
+import com.caijunrong.superrecycleview.adapter.ChatAdapter;
 import com.caijunrong.superrecycleview.bean.ChatMessage;
 
 /**

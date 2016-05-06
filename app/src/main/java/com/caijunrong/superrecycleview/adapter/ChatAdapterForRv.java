@@ -1,55 +1,50 @@
-package com.caijunrong.superrecycleview;
+package com.caijunrong.superrecycleview.adapter;
 
 import android.content.Context;
 
-import com.caijunrong.base.adapter.listview.MultiItemCommonAdapter;
-import com.caijunrong.base.adapter.listview.MultiItemTypeSupport;
 import com.caijunrong.base.adapter.ViewHolder;
+import com.caijunrong.base.adapter.recyclerview.MultiItemCommonAdapter;
+import com.caijunrong.base.adapter.recyclerview.MultiItemTypeSupport;
+import com.caijunrong.superrecycleview.R;
 import com.caijunrong.superrecycleview.bean.ChatMessage;
 
 import java.util.List;
 
 /**
- * Created by caijunrong on 16/5/5.
+ * Created by biyabi on 16/5/6.
  */
-public class ChatAdapter extends MultiItemCommonAdapter<ChatMessage> {
+public class ChatAdapterForRv extends MultiItemCommonAdapter<ChatMessage> {
 
 
-    public ChatAdapter(Context context, List<ChatMessage> datas)
-    {
-        super(context, datas, new MultiItemTypeSupport<ChatMessage>()
-        {
+
+    public ChatAdapterForRv(Context context, List<ChatMessage> datas){
+
+        super(context, datas, new MultiItemTypeSupport<ChatMessage>() {
             @Override
-            public int getLayoutId(int position, ChatMessage msg)
-            {
-                if (msg.isComMeg())
+            public int getLayoutId(int itemType) {
+                if (itemType == ChatMessage.RECIEVE_MSG)
                 {
                     return R.layout.main_chat_from_msg;
-                }
-                return R.layout.main_chat_send_msg;
+                } else
+                    return R.layout.main_chat_send_msg;
             }
 
             @Override
-            public int getViewTypeCount()
-            {
-                return 2;
-            }
-            @Override
-            public int getItemViewType(int postion, ChatMessage msg)
-            {
-                if (msg.isComMeg())
+            public int getItemViewType(int position, ChatMessage chatMessage) {
+                if (chatMessage.isComMeg())
                 {
                     return ChatMessage.RECIEVE_MSG;
                 }
                 return ChatMessage.SEND_MSG;
             }
         });
+
+
     }
 
-
-
     @Override
-    public void convert(ViewHolder holder, ChatMessage chatMessage) {
+    public void convert(ViewHolder holder, ChatMessage chatMessage)
+    {
 
         switch (holder.getLayoutId())
         {
@@ -64,6 +59,5 @@ public class ChatAdapter extends MultiItemCommonAdapter<ChatMessage> {
                 holder.setImageResource(R.id.chat_send_icon, chatMessage.getIcon());
                 break;
         }
-
     }
 }

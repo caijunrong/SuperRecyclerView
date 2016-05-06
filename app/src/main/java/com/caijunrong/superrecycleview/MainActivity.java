@@ -48,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
                     break;
                     case 1:
                         intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                        break;
+                    case 2:
+                        intent = new Intent(MainActivity.this,MultiItemRecyclerViewActivity.class);
+                        break;
 
 
                 }
