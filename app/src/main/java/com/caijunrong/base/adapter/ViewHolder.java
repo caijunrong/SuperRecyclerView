@@ -1,4 +1,4 @@
-package com.caijunrong.base.adapter.listview;
+package com.caijunrong.base.adapter;
 
 
 import android.content.Context;
@@ -15,7 +15,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 /**
- * Created by biyabi on 16/5/5.
+ * Created by caijunrong on 16/5/5.
  */
 public class ViewHolder extends RecyclerView.ViewHolder{
 

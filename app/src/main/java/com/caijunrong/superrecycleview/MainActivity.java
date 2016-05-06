@@ -10,7 +10,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.caijunrong.base.adapter.listview.CommonAdapter;
-import com.caijunrong.base.adapter.listview.ViewHolder;
+import com.caijunrong.base.adapter.ViewHolder;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -42,10 +42,19 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = null;
 
-                intent = new Intent(MainActivity.this ,MultiItemListViewActivity.class);
-                Toast.makeText(MainActivity.this, position+"position", Toast.LENGTH_SHORT).show();
-                if (intent != null)
+                switch (position){
+                    case 0:
+                        intent = new Intent(MainActivity.this ,MultiItemListViewActivity.class);
+                    break;
+                    case 1:
+                        intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+
+
+                }
+                Toast.makeText(MainActivity.this, "position:"+position, Toast.LENGTH_SHORT).show();
+                if (intent != null) {
                     startActivity(intent);
+                }
 
             }
         });

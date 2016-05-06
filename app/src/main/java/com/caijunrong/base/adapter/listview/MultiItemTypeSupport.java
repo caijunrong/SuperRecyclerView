@@ -1,7 +1,7 @@
 package com.caijunrong.base.adapter.listview;
 
 /**
- * Created by biyabi on 16/5/5.
+ * Created by caijunrong on 16/5/5.
  */
 public interface MultiItemTypeSupport<T> {
 

@@ -17,7 +17,13 @@
         </activity>
 
         <activity
-            android:name=".MultiItemListViewActivity" >
+            android:name=".MultiItemListViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:screenOrientation="portrait">
         </activity>
 
     </application>

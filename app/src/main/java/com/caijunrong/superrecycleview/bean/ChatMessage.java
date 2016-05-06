@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by biyabi on 16/5/5.
+ * Created by caijunrong on 16/5/5.
  */
 public class ChatMessage {
 

@@ -7,7 +7,7 @@ import android.widget.ListView;
 import com.caijunrong.superrecycleview.bean.ChatMessage;
 
 /**
- * Created by biyabi on 16/5/5.
+ * Created by caijunrong on 16/5/5.
  */
 public class MultiItemListViewActivity extends AppCompatActivity {
 

@@ -2,16 +2,15 @@ package com.caijunrong.superrecycleview;
 
 import android.content.Context;
 
-import com.caijunrong.base.adapter.listview.CommonAdapter;
 import com.caijunrong.base.adapter.listview.MultiItemCommonAdapter;
 import com.caijunrong.base.adapter.listview.MultiItemTypeSupport;
-import com.caijunrong.base.adapter.listview.ViewHolder;
+import com.caijunrong.base.adapter.ViewHolder;
 import com.caijunrong.superrecycleview.bean.ChatMessage;
-import com.caijunrong.superrecycleview.R;
+
 import java.util.List;
 
 /**
- * Created by biyabi on 16/5/5.
+ * Created by caijunrong on 16/5/5.
  */
 public class ChatAdapter extends MultiItemCommonAdapter<ChatMessage> {
 

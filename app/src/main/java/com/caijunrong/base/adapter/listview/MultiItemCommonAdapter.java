@@ -4,11 +4,12 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.IllegalFormatCodePointException;
+import com.caijunrong.base.adapter.ViewHolder;
+
 import java.util.List;
 
 /**
- * Created by biyabi on 16/5/5.
+ * Created by caijunrong on 16/5/5.
  */
 public abstract class MultiItemCommonAdapter<T> extends CommonAdapter<T> {
 
@@ -57,7 +58,6 @@ public abstract class MultiItemCommonAdapter<T> extends CommonAdapter<T> {
                 e.printStackTrace();
             }
         }
-
     }
 
 
