@@ -18,7 +18,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private List<String> mDatas = new ArrayList<>(Arrays.asList("MultiItemListViewActivity","RecyclerViewActivity","MultiItemRecyclerViewActivity","RecyclerViewWithHeaderActivity"));
+    private List<String> mDatas = new ArrayList<>(Arrays.asList("MultiItemListView","RecyclerView","MultiItemRecyclerView","RecyclerViewWithHeader","GridRecyclerView"));
     private ListView mListView;
 
     @Override
@@ -52,10 +52,15 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         intent = new Intent(MainActivity.this,MultiItemRecyclerViewActivity.class);
                         break;
-
-
+                    case  3:
+                        intent = new Intent(MainActivity.this, RecyclerViewWithHeaderActivity.class);
+                        break;
+                    case 4:
+                        intent = new Intent(MainActivity.this, GridRecyclerViewActivity.class);
                 }
+
                 Toast.makeText(MainActivity.this, "position:"+position, Toast.LENGTH_SHORT).show();
+
                 if (intent != null) {
                     startActivity(intent);
                 }

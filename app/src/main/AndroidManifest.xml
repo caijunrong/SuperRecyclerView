@@ -30,6 +30,16 @@
             android:name=".MultiItemRecyclerViewActivity"
             android:screenOrientation="portrait">
         </activity>
+
+        <activity
+            android:name=".RecyclerViewWithHeaderActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".GridRecyclerViewActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>
