@@ -55,6 +55,9 @@ public class RecyclerViewWithHeaderActivity extends AppCompatActivity{
         };
 
 
+
+
+
         SectionAdapter<String> adapter = new SectionAdapter<String>(this, R.layout.item_list, mDatas, sectionSupport)
         {
 
