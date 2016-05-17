@@ -34,13 +34,13 @@ public class MultiItemRecyclerViewActivity extends AppCompatActivity {
         adapter.setOnItemClickListener(new OnItemClickListener<ChatMessage>()
         {
             @Override
-            public void onItemClick(ViewGroup parent, View view, ChatMessage o, int position)
+            public void onItemClick(ViewGroup parent, View view, ChatMessage o, int section, int position)
             {
                 Toast.makeText(MultiItemRecyclerViewActivity.this, "Click:" + position + " => " + o.getContent(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
-            public boolean onItemLongClick(ViewGroup parent, View view, ChatMessage o, int position)
+            public boolean onItemLongClick(ViewGroup parent, View view, ChatMessage o, int section, int position)
             {
                 Toast.makeText(MultiItemRecyclerViewActivity.this, "LongClick:" + position + " => " + o.getContent(), Toast.LENGTH_SHORT).show();
                 return false;

@@ -33,6 +33,7 @@ public class RecyclerViewWithHeaderActivity extends AppCompatActivity{
         initDatas();
 
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
+
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL_LIST));
@@ -55,9 +56,6 @@ public class RecyclerViewWithHeaderActivity extends AppCompatActivity{
         };
 
 
-
-
-
         SectionAdapter<String> adapter = new SectionAdapter<String>(this, R.layout.item_list, mDatas, sectionSupport)
         {
 
@@ -71,13 +69,13 @@ public class RecyclerViewWithHeaderActivity extends AppCompatActivity{
         adapter.setOnItemClickListener(new OnItemClickListener<String>()
         {
             @Override
-            public void onItemClick(ViewGroup parent, View view, String o, int position)
+            public void onItemClick(ViewGroup parent, View view, String o, int section ,int position)
             {
                 Toast.makeText(RecyclerViewWithHeaderActivity.this, "Click:" + position + " => " + o, Toast.LENGTH_SHORT).show();
             }
 
             @Override
-            public boolean onItemLongClick(ViewGroup parent, View view, String o, int position)
+            public boolean onItemLongClick(ViewGroup parent, View view, String o, int section ,int position)
             {
                 return false;
             }

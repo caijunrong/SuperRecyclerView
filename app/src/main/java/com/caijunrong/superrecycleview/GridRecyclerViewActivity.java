@@ -51,12 +51,12 @@ public class GridRecyclerViewActivity extends AppCompatActivity {
 
         adapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
-            public void onItemClick(ViewGroup parent, View view, Object o, int position) {
+            public void onItemClick(ViewGroup parent, View view, Object o, int section, int position) {
                 Toast.makeText(GridRecyclerViewActivity.this, "position:"+position+";name:"+o, Toast.LENGTH_SHORT).show();
             }
 
             @Override
-            public boolean onItemLongClick(ViewGroup parent, View view, Object o, int position) {
+            public boolean onItemLongClick(ViewGroup parent, View view, Object o, int section, int position) {
                 return false;
             }
         });

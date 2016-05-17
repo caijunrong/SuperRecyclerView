@@ -65,7 +65,7 @@ public abstract class CommonAdapter<T> extends RecyclerView.Adapter<ViewHolder>{
                 if (mOnItemClickListener != null)
                 {
                     int position = getPosition(viewHolder);
-                    mOnItemClickListener.onItemClick(parent, v, mDatas.get(position), position);
+                    mOnItemClickListener.onItemClick(parent, v, mDatas.get(position),0 , position);
                 }
             }
         });
@@ -79,7 +79,7 @@ public abstract class CommonAdapter<T> extends RecyclerView.Adapter<ViewHolder>{
                 if (mOnItemClickListener != null)
                 {
                     int position = getPosition(viewHolder);
-                    return mOnItemClickListener.onItemLongClick(parent, v, mDatas.get(position), position);
+                    return mOnItemClickListener.onItemLongClick(parent, v, mDatas.get(position), 0 ,position);
                 }
                 return false;
             }

@@ -38,8 +38,6 @@ public class ChatAdapterForRv extends MultiItemCommonAdapter<ChatMessage> {
                 return ChatMessage.SEND_MSG;
             }
         });
-
-
     }
 
     @Override
