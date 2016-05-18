@@ -35,17 +35,17 @@ public class LeftModelBean extends BaseBean {
 
     static {
         LeftModelBean msg = null;
-        msg = new LeftModelBean(false, 0, R.drawable.huaixiao, "左边", "A");
+        msg = new LeftModelBean(false, 0, R.drawable.huaixiao, "左边1", "A");
         MODEL_LEFT.add(msg);
-        msg = new LeftModelBean(false, 0, R.drawable.huaixiao, "左边", "B");
+        msg = new LeftModelBean(false, 0, R.drawable.huaixiao, "左边2", "B");
         MODEL_LEFT.add(msg);
-        msg = new LeftModelBean(false, 0, R.drawable.huaixiao, "左边", "C");
+        msg = new LeftModelBean(false, 0, R.drawable.huaixiao, "左边3", "C");
         MODEL_LEFT.add(msg);
-        msg = new LeftModelBean(false, 0, R.drawable.huaixiao, "左边", "D");
+        msg = new LeftModelBean(false, 0, R.drawable.huaixiao, "左边4", "D");
         MODEL_LEFT.add(msg);
-        msg = new LeftModelBean(false, 0, R.drawable.huaixiao, "左边", "E");
+        msg = new LeftModelBean(false, 0, R.drawable.huaixiao, "左边5", "E");
         MODEL_LEFT.add(msg);
-        msg = new LeftModelBean(false, 0, R.drawable.huaixiao, "左边", "F");
+        msg = new LeftModelBean(false, 0, R.drawable.huaixiao, "左边6", "F");
         MODEL_LEFT.add(msg);
     }
 
